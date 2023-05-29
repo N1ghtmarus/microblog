@@ -1,0 +1,33 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.flaskenv
+
+# Static files
+/static/
+
+# Logs
+/logs/
+
+# Generated files
+*.pyc
+*.pyo
+*.pyd
+*.~*
+*~
+
+# Virtual environment
+venv/
+
+# Development database
+db.sqlite3
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+*.idea/
