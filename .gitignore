@@ -25,6 +25,7 @@ venv/
 
 # Development database
 db.sqlite3
+app.db
 
 # IDE files
 .vscode/
