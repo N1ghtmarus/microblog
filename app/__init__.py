@@ -5,6 +5,9 @@ from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
+from flask_mail import Mail
+from flask_bootstrap import Bootstrap
+from flask_moment import Moment
 import logging
 from logging.handlers import SMTPHandler
 
@@ -16,6 +19,12 @@ login.login_view = 'auth.login_page' #this settig implenets login force for cert
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+
+mail = Mail(app)
+
+bootstrap = Bootstrap(app)
+
+moment = Moment(app) #module for the date and time handle
 
 from app import routes, models, errors, auth, users
 
